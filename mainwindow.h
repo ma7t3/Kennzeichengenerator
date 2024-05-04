@@ -16,7 +16,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+protected slots:
+    void refreshPreview();
+
 private:
     Ui::MainWindow *ui;
+
+    QPicture *picture;
 };
 #endif // MAINWINDOW_H
