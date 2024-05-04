@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include <QPicture>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -18,9 +20,16 @@ public:
 
 protected slots:
     void refreshPreview();
+    void renderEuEmblem(QPainter *);
+    void renderHuSticker(QPainter *, QRect);
+
+private slots:
+    void on_pbCopyToClipboard_clicked();
 
 private:
     Ui::MainWindow *ui;
+
+    const int addSize = 650;
 
     QPicture *picture;
 };

@@ -17,6 +17,12 @@
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QGroupBox" name="gbOptions">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="title">
        <string>Options</string>
       </property>
@@ -65,6 +71,9 @@
           <widget class="QLineEdit" name="leText">
            <property name="toolTip">
             <string>The text that you want to show on the licence plate. Use &quot;:&quot; for the &quot;HU-Sticker&quot;</string>
+           </property>
+           <property name="text">
+            <string>KI:VO 70</string>
            </property>
           </widget>
          </item>
@@ -127,6 +136,33 @@
          </item>
          <item row="4" column="1">
           <widget class="QDateEdit" name="deHuDate">
+           <property name="maximumDateTime">
+            <datetime>
+             <hour>22</hour>
+             <minute>59</minute>
+             <second>59</second>
+             <year>2033</year>
+             <month>12</month>
+             <day>31</day>
+            </datetime>
+           </property>
+           <property name="minimumDateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>1961</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="maximumDate">
+            <date>
+             <year>2033</year>
+             <month>12</month>
+             <day>31</day>
+            </date>
+           </property>
            <property name="displayFormat">
             <string>MM.yyyy</string>
            </property>
@@ -286,6 +322,12 @@
     </item>
     <item>
      <widget class="QGroupBox" name="gbOutput">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="title">
        <string>Output</string>
       </property>
