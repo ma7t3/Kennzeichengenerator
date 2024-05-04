@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Images/EU_Emblem.svg</file>
         <file>HU-Sticker/1961.png</file>
         <file>HU-Sticker/1962.png</file>
         <file>HU-Sticker/1963.png</file>
